@@ -1,0 +1,331 @@
+{
+  "strategies": {
+    "coverage_guided": {
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "state_coverage": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "transition_coverage": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "pair_coverage": {
+        "mean": 94.426,
+        "stdev": 1.015,
+        "min": 92.79,
+        "max": 95.41
+      },
+      "mutation_score": {
+        "mean": 91.67,
+        "stdev": 0.0,
+        "min": 91.67,
+        "max": 91.67
+      },
+      "generation_time_s": {
+        "mean": 0.247,
+        "stdev": 0.016,
+        "min": 0.2265,
+        "max": 0.2677
+      },
+      "execution_time_s": {
+        "mean": 0.036,
+        "stdev": 0.004,
+        "min": 0.0313,
+        "max": 0.0422
+      },
+      "mutation_time_s": {
+        "mean": 0.093,
+        "stdev": 0.003,
+        "min": 0.088,
+        "max": 0.098
+      },
+      "duplicate_sequences": {
+        "mean": 0,
+        "stdev": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "avg_length": {
+        "mean": 12.512,
+        "stdev": 0.292,
+        "min": 12.16,
+        "max": 12.92
+      }
+    },
+    "random_walk": {
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "state_coverage": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "transition_coverage": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "pair_coverage": {
+        "mean": 79.932,
+        "stdev": 1.904,
+        "min": 77.05,
+        "max": 82.62
+      },
+      "mutation_score": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "generation_time_s": {
+        "mean": 0.139,
+        "stdev": 0.009,
+        "min": 0.1294,
+        "max": 0.1543
+      },
+      "execution_time_s": {
+        "mean": 0.026,
+        "stdev": 0.002,
+        "min": 0.0227,
+        "max": 0.0296
+      },
+      "mutation_time_s": {
+        "mean": 0.058,
+        "stdev": 0.004,
+        "min": 0.0525,
+        "max": 0.0642
+      },
+      "duplicate_sequences": {
+        "mean": 22.6,
+        "stdev": 7.658,
+        "min": 13,
+        "max": 33
+      },
+      "avg_length": {
+        "mean": 10.452,
+        "stdev": 0.368,
+        "min": 10.08,
+        "max": 11.12
+      }
+    },
+    "transition_pair": {
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "state_coverage": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "transition_coverage": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "pair_coverage": {
+        "mean": 100.0,
+        "stdev": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "mutation_score": {
+        "mean": 91.67,
+        "stdev": 0.0,
+        "min": 91.67,
+        "max": 91.67
+      },
+      "generation_time_s": {
+        "mean": 0.639,
+        "stdev": 0.026,
+        "min": 0.6062,
+        "max": 0.6735
+      },
+      "execution_time_s": {
+        "mean": 0.061,
+        "stdev": 0.013,
+        "min": 0.0466,
+        "max": 0.086
+      },
+      "mutation_time_s": {
+        "mean": 0.147,
+        "stdev": 0.01,
+        "min": 0.1358,
+        "max": 0.1586
+      },
+      "duplicate_sequences": {
+        "mean": 0,
+        "stdev": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "avg_length": {
+        "mean": 19.622,
+        "stdev": 0.007,
+        "min": 19.61,
+        "max": 19.63
+      }
+    }
+  },
+  "kill_matrix": {
+    "M01": {
+      "name": "M01ReserveWhenOccupied",
+      "equivalent": false,
+      "category": "missing guard",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M02": {
+      "name": "M02DepositInMaintenance",
+      "equivalent": false,
+      "category": "missing guard",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M03": {
+      "name": "M03RetrieveWithoutAuth",
+      "equivalent": false,
+      "category": "authentication",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M04": {
+      "name": "M04ExpireIgnoresFlag",
+      "equivalent": false,
+      "category": "wrong condition",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M05": {
+      "name": "M05StaleRetrievalCode",
+      "equivalent": false,
+      "category": "stale data",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M06": {
+      "name": "M06CancelWhenOccupied",
+      "equivalent": false,
+      "category": "cancellation rule",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M07": {
+      "name": "M07RejectedDepositChangesCustomer",
+      "equivalent": false,
+      "category": "side effect on rejection",
+      "random": 5,
+      "coverage": 5,
+      "pair": 0
+    },
+    "M08": {
+      "name": "M08DisableWhileReserved",
+      "equivalent": false,
+      "category": "missing guard",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M09": {
+      "name": "M09EnableWhenAvailable",
+      "equivalent": false,
+      "category": "missing guard",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M10": {
+      "name": "M10InvalidAccessWipesCode",
+      "equivalent": false,
+      "category": "side effect on rejection",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M11": {
+      "name": "M11ExpireWhenOccupied",
+      "equivalent": false,
+      "category": "wrong state check",
+      "random": 5,
+      "coverage": 5,
+      "pair": 5
+    },
+    "M12": {
+      "name": "M12DeepStaleReservationAfterReuse",
+      "equivalent": false,
+      "category": "deep / history-dependent",
+      "random": 5,
+      "coverage": 0,
+      "pair": 5
+    },
+    "M13": {
+      "name": "M13ExpireIsTrueCheck",
+      "equivalent": true,
+      "category": "equivalent",
+      "random": 0,
+      "coverage": 0,
+      "pair": 0
+    },
+    "M14": {
+      "name": "M14DepositInMaintenanceCodeChecked",
+      "equivalent": true,
+      "category": "equivalent (unreachable)",
+      "random": 0,
+      "coverage": 0,
+      "pair": 0
+    }
+  },
+  "config": {
+    "strategies": [
+      "random",
+      "coverage",
+      "pair"
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sequences_per_run": 500,
+    "max_length": 20,
+    "model_states": 4,
+    "model_transitions": 35,
+    "model_transition_pairs": 305,
+    "mutants_total": 14,
+    "mutants_equivalent": 2,
+    "python": "3.12.3",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "run_at": "2026-11-13T18:49:56"
+  }
+}
